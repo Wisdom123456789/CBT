@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pop_quiz.css">
+</head>
+<body>
+    <div class="quiz-body">
+        <div class="first">
+             <h2>Sage's Quiz</h2>
+        </div>
+        <div class="quiz-main">
+            <div class="quiz-question">
+                <h2 id="questionsarea"></h2>
+            </div>
+            <div class="quiz-answers">
+                <button id="btn1" onclick="useranswer(btn1.innerHTML)"></button>
+                <button id="btn2" onclick="useranswer(btn2.innerHTML)"></button>
+                <button id="btn3" onclick="useranswer(btn3.innerHTML)"></button>
+                <button id="btn4" onclick="useranswer(btn4.innerHTML)"></button>
+            </div>
+        </div>
+        <div class="quiz-footer">
+            <div class="general">
+                <div class="footer-one">
+                    <p id="questionscount"></p>
+                </div>
+                <div class="footer-middle">
+                    <button class="submit" onclick="submitest()">Submit</button>
+                </div>
+                <div class="footer-two">
+                    <button class="Prev" onclick="Prev()">Prev</button>
+                    <button class="Next" onclick="Next()">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="pop_quiz.js"></script>
